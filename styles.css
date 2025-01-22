@@ -1,9 +1,10 @@
 /* General Reset */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #f4f4f9;
     color: #333;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -20,11 +21,13 @@ header {
     text-align: center;
     padding: 50px 20px;
     position: relative;
+    overflow: hidden;
 }
 
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header p {
@@ -40,6 +43,40 @@ header p {
     border: 5px solid white;
 }
 
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: #0070f3;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn-primary {
+    background: #ff4500;
+}
+
+.btn-primary:hover {
+    background: #e63900;
+}
+
+.btn-secondary {
+    background: #004080;
+}
+
+.btn-secondary:hover {
+    background: #002d4d;
+}
+
 /* Section Styles */
 section {
     margin: 50px 0;
@@ -47,6 +84,7 @@ section {
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    animation: slideIn 1.5s ease-out;
 }
 
 section h2 {
@@ -78,4 +116,15 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-30px); }
+    100% { opacity: 1; transform: translateX(0); }
 }
