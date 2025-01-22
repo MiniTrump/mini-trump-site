@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniTrump - The Meme Coin</title>
+    <title>MiniTrump - The Ultimate Meme Coin</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Welcome to MiniTrump</h1>
+            <h1 class="animate-text">Welcome to MiniTrump</h1>
             <p>The Meme Coin Leading the Mini America!</p>
             <img src="mini-trump.png" alt="MiniTrump Icon" class="header-image">
+            <a href="#about" class="btn btn-primary">Learn More</a>
         </div>
     </header>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
-            <h2>What is MiniTrump?</h2>
-            <p>MiniTrump is a new meme coin inspired by the iconic and charismatic figure of Trump, in a "mini" version. With MiniTrump, you enter a world where politics, memes, and blockchain come together to create a fun and engaging experience. This cryptocurrency is not just an investment; it's a movement!</p>
+            <h2>About MiniTrump</h2>
+            <p>MiniTrump is a revolutionary meme coin that combines the power of blockchain technology with the charisma and humor of the iconic Trump figure, but in a fun and "mini" version. This cryptocurrency is not just a token; it's a movement aiming to unite communities, create laughter, and provide a unique way to engage with the world of crypto.</p>
+            <p>Whether you're a seasoned investor or a crypto newbie, MiniTrump offers an accessible and exciting opportunity to be part of something extraordinary. Join us as we pave the way for the next big meme coin revolution!</p>
         </div>
     </section>
 
@@ -26,41 +29,84 @@
         <div class="container">
             <h2>Why Choose MiniTrump?</h2>
             <ul>
-                <li><strong>Iconic Meme Coin:</strong> MiniTrump represents "mini" leadership with big ambitions.</li>
-                <li><strong>Community-Driven:</strong> Join Mini America and participate in our decentralized democracy.</li>
-                <li><strong>Unique Tokenomics:</strong> Designed to be fun, accessible, and with viral growth potential.</li>
+                <li><strong>Iconic Meme Appeal:</strong> Inspired by one of the most talked-about figures, MiniTrump is designed to go viral.</li>
+                <li><strong>Community-Driven:</strong> Be part of Mini America, a vibrant and inclusive community shaping the future of this token.</li>
+                <li><strong>Fun Meets Functionality:</strong> While it's a meme coin, MiniTrump is backed by solid tokenomics and a clear roadmap for growth.</li>
+                <li><strong>Engaging Ecosystem:</strong> From NFTs to gaming integrations, MiniTrump aims to be more than just a coin – it's a lifestyle.</li>
             </ul>
         </div>
     </section>
 
     <section class="roadmap">
         <div class="container">
-            <h2>MiniTrump Roadmap</h2>
+            <h2>Our Roadmap</h2>
+            <p>MiniTrump is committed to delivering on its promises and building a sustainable ecosystem. Here's our roadmap:</p>
             <ol>
-                <li><strong>Phase 1:</strong> Launch of the token on blockchain, website creation, and social media campaigns.</li>
-                <li><strong>Phase 2:</strong> Release of MiniTrump NFTs and listing on decentralized exchanges (DEX).</li>
-                <li><strong>Phase 3:</strong> Expansion with GameFi, centralized exchange listings, and international reach!</li>
+                <li><strong>Phase 1:</strong> Token launch, website creation, and social media campaigns to build awareness and attract early adopters.</li>
+                <li><strong>Phase 2:</strong> Introduction of MiniTrump NFTs and partnerships with influencers to boost visibility.</li>
+                <li><strong>Phase 3:</strong> Listing on decentralized exchanges (DEX) and launching community-driven initiatives.</li>
+                <li><strong>Phase 4:</strong> Expanding into GameFi and exploring opportunities in the metaverse.</li>
+                <li><strong>Phase 5:</strong> Listing on centralized exchanges (CEX) and scaling globally.</li>
             </ol>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Decentralized Governance</h3>
+                    <p>MiniTrump empowers its community to make important decisions through voting and decentralized governance mechanisms.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Scarcity and Value</h3>
+                    <p>With a limited supply and deflationary mechanics, MiniTrump is designed to appreciate in value over time.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Interactive Ecosystem</h3>
+                    <p>From NFTs to gaming and social platforms, MiniTrump offers a dynamic and interactive ecosystem for users to explore.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="join">
         <div class="container">
             <h2>Join the MiniTrump Movement</h2>
-            <p>Stay updated and be part of the revolution:</p>
+            <p>Ready to be part of something big (but mini)? Join the MiniTrump community today and take your first steps into a world of fun, memes, and crypto innovation.</p>
             <ul>
                 <li><strong>Official Website:</strong> Coming Soon!</li>
-                <li><strong>Follow Us:</strong> Twitter, Reddit, and Telegram.</li>
-                <li><strong>Pre-sale:</strong> Participate in our pre-sale and get your MiniTrump tokens early!</li>
+                <li><strong>Follow Us:</strong> Stay updated by joining us on Twitter, Reddit, and Telegram.</li>
+                <li><strong>Pre-sale:</strong> Don't miss out on our pre-sale events to secure your MiniTrump tokens early!</li>
             </ul>
+            <a href="#" class="btn btn-secondary">Join Now</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 MiniTrump. All Rights Reserved.</p>
+            <p>&copy; 2025 MiniTrump. All Rights Reserved. | Designed for Meme Lovers Everywhere.</p>
+            <p>Contact us: <a href="mailto:support@minitrump.com">support@minitrump.com</a></p>
         </div>
     </footer>
+
+    <script>
+        // Add scroll effect for buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header animation effect
+        const headerText = document.querySelector('.animate-text');
+        headerText.classList.add('animated');
+    </script>
 </body>
 </html>
 
